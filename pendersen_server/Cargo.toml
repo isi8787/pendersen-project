@@ -1,0 +1,25 @@
+[package]
+name = "pendersen_server"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+prost-build = "0.8"
+tonic-build = "0.6"
+
+[dependencies]
+tonic = "0.6"
+prost = "0.9"
+prost-types = "0.9"
+tokio = { version = "1", features = ["full"] }
+rand = "0.8"
+num-bigint = "0.4" 
+num-traits = "0.2"
+serde_json = "1.0"
+sha2 = "0.10"
+base64 = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
